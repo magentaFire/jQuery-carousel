@@ -4,15 +4,9 @@ $(document).ready(function(){
   $("#imgToggle01").show();
 
   //función para botones flecha
-  $('[class^="navButton"]').click(function(){
-    if (this.id == "forward") {
-      $('[id^="imgToggle"]').hide();
-      
-    }
-    else if (this.id == "backward") {
-      console.log("adioli");
-    }
-  });
+  var nombreToggle = "imgToggle0";
+  var images = $("img");
+  
 
   //función temporizador
 
@@ -23,7 +17,7 @@ $(document).ready(function(){
       $("#imgToggle02").hide()
       $("#imgToggle03").hide()
       $("#imgToggle04").hide()
-      $("#imgToggle05").each()
+      $("#imgToggle05").hide()
     }
     else if (this.id == "star02") {
       $("#imgToggle01").hide()
