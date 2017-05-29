@@ -26,6 +26,15 @@ $(document).ready(function(){
   });
 
   //función temporizador
+  setInterval(avanzaAuto, 2000);
+  function avanzaAuto(){
+    images.hide();
+    document.getElementById("imgToggle0" + numbers).style.display = "flex";
+    if(numbers >= 5){
+      numbers = 0;
+    }
+    numbers += 1;
+  }
 
   // función para botones estrella
   $('[id^="star"]').click(function(){
