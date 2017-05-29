@@ -4,8 +4,6 @@ $(document).ready(function(){
   $("#imgToggle01").show();
 
   //función para botones flecha
-  var nombreToggle = "imgToggle0";
-
   var images = $("img");
   var numbers = 1;
 
@@ -14,14 +12,14 @@ $(document).ready(function(){
     if (this.id == "forward"){
       document.getElementById("imgToggle0" + numbers).style.display = "flex";
       if(numbers >= 5){
-        numbers = 1;
+        numbers = 0;
       }
       numbers += 1;
     }
     else if (this.id == "backward"){
       document.getElementById("imgToggle0" + numbers).style.display = "flex";
       if(numbers <= 1){
-        numbers = 5;
+        numbers = 6;
       }
       numbers -= 1;
     }
