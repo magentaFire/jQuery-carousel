@@ -12,3 +12,7 @@ body {
 [id^=star] {
   padding: 0 10px;
 }
+
+i:hover {
+  cursor: pointer;
+}
