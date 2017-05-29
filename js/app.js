@@ -6,7 +6,17 @@ $(document).ready(function(){
   //función para botones flecha
   var nombreToggle = "imgToggle0";
   var images = $("img");
-  
+  var numbers = 1;
+
+  $('[class^="navButton"]').click(function(){
+    images.hide();
+    if (this.id == "forward"){
+      console.log("holi");
+    }
+    if (this.id == "backward"){
+      console.log("adioli");
+    }
+  });
 
   //función temporizador
 
