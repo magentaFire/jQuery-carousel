@@ -18,8 +18,8 @@ $(document).ready(function(){
       }
       numbers += 1;
     }
-    if (this.id == "backward"){
-      document.getElementById("imgToggle0" - numbers).style.display = "flex";
+    else if (this.id == "backward"){
+      document.getElementById("imgToggle0" + numbers).style.display = "flex";
       if(numbers <= 1){
         numbers = 5;
       }
