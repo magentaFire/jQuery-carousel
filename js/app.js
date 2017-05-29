@@ -5,16 +5,25 @@ $(document).ready(function(){
 
   //función para botones flecha
   var nombreToggle = "imgToggle0";
+
   var images = $("img");
   var numbers = 1;
 
   $('[class^="navButton"]').click(function(){
     images.hide();
     if (this.id == "forward"){
-      console.log("holi");
+      document.getElementById("imgToggle0" + numbers).style.display = "flex";
+      if(numbers >= 5){
+        numbers = 1;
+      }
+      numbers += 1;
     }
     if (this.id == "backward"){
-      console.log("adioli");
+      document.getElementById("imgToggle0" - numbers).style.display = "flex";
+      if(numbers <= 1){
+        numbers = 5;
+      }
+      numbers -= 1;
     }
   });
 
